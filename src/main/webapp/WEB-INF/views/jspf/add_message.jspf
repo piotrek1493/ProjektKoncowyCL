@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false" %>
+<%@    taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@    taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page session="true" %>
+<p>
+<c:choose>
+    <c:when test="${sessionScope.user == null}">
+        You need to be logged in, in order to send messages.
+    </c:when>
+    <c:otherwise>
+        <h3>Write message:</h3>
+        <form:form action="/message/add/${receiverId}" method="post" modelAttribute="message">
+            Message Text <form:textarea path="text" type="text"/><form:errors path="text"></form:errors><br/>
+            <input type="submit"/>
+        </form:form>
+    </c:otherwise>
+</c:choose>
+</p>

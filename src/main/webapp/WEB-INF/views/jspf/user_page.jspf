@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false"%>
+<%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page session="true" %>
+
+<br>
+<br>
+<br>
+<p class = allOffers> Offers by user: ${user.userName}</p>
+
+
+<c:choose>
+    <c:when test="${empty userFlats}">
+        Nie znaleziono zadnych ofert
+    </c:when>
+    <c:otherwise>
+
+        <c:forEach items="${userFlats}" var="flat">
+            <div>
+                <div class = "div1">
+                    <p class="flatName"><a href="flat/${flat.id}"><b>${flat.name}</b></a></p>
+                    <p>City: ${flat.city}</p>
+                    <p>Type of Flat: ${flat.typeOfFlat}</p>
+                    <p>Price: ${flat.price} zl</p>
+                    <p>Author: ${flat.user.userName}</p>
+                    <p><a href="flat/${flat.id}">Show more..</a></p>
+                </div>
+                <div class = "div2">
+                    <p><img src="${pageContext.request.contextPath}/resources/picture/${flat.photo}" width="300" height="250"/></p>
+                </div>
+                <br/>
+
+            </div>
+        </c:forEach>
+
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a class="w3-button w3-black" href="#">1</a>
+                <a class="w3-button w3-hover-black" href="#">2</a>
+                <a class="w3-button w3-hover-black" href="#">3</a>
+                <a class="w3-button w3-hover-black" href="#">4</a>
+                <a class="w3-button w3-hover-black" href="#">5</a>
+                <a class="w3-button w3-hover-black" href="#">»</a>
+            </div>
+        </div>
+    </c:otherwise>
+</c:choose>
+

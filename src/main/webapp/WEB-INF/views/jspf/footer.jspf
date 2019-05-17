@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
+<footer id="footer">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+        <h4 style="text-align: center">Written by: Piotr Szukalski<br>Github: <a href="https://github.com/piotrek1493">
+            <u style="color: black">https://github.com/piotrek1493</u></a></h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+        <p id="year">CodersLab, kurs Java Developer: Web<br>Projekt koncowy</p>
+    </div>
+</footer>
+<%--<footer class="w3-container w3-theme-d1 w3-center">--%>
+<%--    <h4 style="display: inline">Written by: Piotr Szukalski</h4>--%>
+<%--    <i class="fa fa-fw fa-phone"></i> <a href="https://github.com/piotrek1493"><u style="color: black">piotrek1493</u></a>--%>
+<%--</footer>--%>

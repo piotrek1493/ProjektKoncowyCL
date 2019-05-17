@@ -1,0 +1,121 @@
+body {
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.rent-highlight {
+	color: green;
+}
+
+.error {
+	color: red;
+}
+
+html, body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica", sans-serif;
+}
+
+.w3-sidebar {
+	z-index: 3;
+	width: 250px;
+	top: 43px;
+	bottom: 0;
+	height: inherit;
+}
+
+.flatName {
+	text-align: center;
+	color: blue;
+	font-weight: bold;
+}
+
+.div1 {
+	width: 50%;
+	height: 250px;
+	float: left;
+}
+
+.div2 {
+	width: 50%;
+	height: 250px;
+	float: right;
+}
+
+#year {
+	color: white;
+	text-align: center;
+}
+
+#copywright {
+	text-align: center;
+}
+
+.allOffers {
+	color: black;
+	font-size: xx-large;
+	text-align: center;
+}
+
+.myFooter {
+	clear: both;
+	position: relative;
+	height: 40px;
+	margin-top: -40px;
+}
+
+.ferror {
+	color: red;
+}
+
+.FlatButton {
+	float: right
+}
+
+.comments {
+	color: red;
+	text-align: center;
+}
+
+.speech-bubble {
+	position: relative;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: #fff;
+	border: 8px solid #666;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+}
+
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#container {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#ff0;
+	padding:10px;
+}
+#body {
+	padding:10px;
+	padding-bottom:60px;   /* Height of the footer */
+}
+
+#footer {
+	clear: both;
+	position: relative;
+	height: 40px;
+	margin-top: -40px;
+}
